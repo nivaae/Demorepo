@@ -3,5 +3,5 @@ FROM httpd:latest
 RUN yum update -y
 RUN yum install apache2 -y
 EXPOSE 80 8080
-VOLUME ["/build/Demo-repo"]
+VOLUME ["/build/var/www/html"]
 CMD echo This is a dockergitjenkins test
